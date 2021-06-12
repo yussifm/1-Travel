@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: rgb(240, 249, 255);
+}
+.Tours {
+	margin: 2%;
+	padding: 1%;
+	text-align: center;
+    display: grid;
+    gap: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.Tours h2 {
+	text-align: center;
+	padding: 1%;
+	text-decoration: underline;
+	font-weight: bold;
+	text-transform: uppercase;
+    grid-area: 1/2 3/4;
+}
+
+article {
+	border-radius: 5px;
+    color: grey;
+	box-shadow: 5px 5px 13px rgb(199, 199, 199);
+	display: flex;
+
+	flex-direction: column;
+	margin: 2%;
+	padding: 1%;
+	width: 100%;
+	align-items: center;
+	background-color: white;
+}
+
+article img {
+	width: 100%;
+	height: 300px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	align-self:stretch;
+    color:aqua;
+	justify-content: space-evenly;
+}
+article h3{
+    padding-left: 5%;
+    color: rgb(77, 75, 75);
+}
+
+.btn {
+	color: rgb(3, 66, 66);
+	border: none;
+}
+
+.btn-more{
+     color:aqua;
+     background-color: inherit;
+}
+
+.btn-delete {
+	border: 1px solid red;
+	color: rgb(245, 76, 76);
+	width: 20%;
+	padding: 0.3%;
+	margin: 0.5%;
+	border-radius: 10px;
+}
